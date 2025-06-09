@@ -1,4 +1,6 @@
 def quicksort(arr):
+    if len(arr) <= 1:
+        return arr
     op = arr[len(arr) // 2]
     left = [x for x in arr if x > op]
     middle = [x for x in arr if x == op]
